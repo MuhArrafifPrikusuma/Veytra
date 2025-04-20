@@ -1,0 +1,60 @@
+/* Profile.css */
+
+html, body {
+  overflow: hidden;
+}
+
+
+@media (max-width: 768px) {
+  .min-h-screen {
+    padding-top: 0rem;
+  }
+
+  .w-full.max-w-4xl {
+    padding: 1rem;
+  }
+
+  .flex-col.md\:flex-row {
+    flex-direction: column;
+  }
+
+  .md\:w-1\/4 {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .md\:w-3\/4.md\:pl-8 {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0;
+  }
+
+  .mb-2.flex.items-center {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .font-semibold.capitalize.w-1\/3 {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .flex.items-center.w-2\/3 {
+    width: 100%;
+  }
+
+  .mt-4 {
+    margin-top: 1.5rem;
+  }
+
+  .w-full.min-h-\[250px\] {
+    min-height: 150px;
+  }
+
+  .w-80 {
+    width: 90%;
+  }
+}

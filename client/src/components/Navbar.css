@@ -1,0 +1,24 @@
+.navbar {
+    background: #69305d;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* 📌 Sembunyikan navbar atas di desktop */
+  @media (min-width: 768px) {
+    .navbar {
+      display: none;
+    }
+  }
+  

@@ -1,0 +1,131 @@
+/* Sidebar Container */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #6e416d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  position: fixed;
+  left: -250px; /* Sidebar tersembunyi */
+  top: 0;
+  z-index: 50;
+  transition: left 0.3s ease-in-out;
+  
+}
+
+/* Sidebar terlihat saat "open" */
+.sidebar.open {
+  left: 0;
+}
+
+/* Tombol Close */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Profile Section */
+.profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid white;
+  object-fit: cover;
+}
+
+.username {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Menu Styling */
+.menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  gap: 10px;
+  transition: background 0.3s;
+}
+
+.menu-item:hover,
+.menu-item.active {
+  background: #ff9e5a;
+  color: black;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+/* Logo Section */
+.logo {
+  margin-top: auto;
+  padding: 20px 0;
+}
+
+.logo-img {
+  width: 100px;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .close-btn {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .has-sidebar {
+    margin-left: 250px; /* Adjust this value to match the sidebar width */
+  }
+}
+
+
+.dropdown-icon {
+  transition: transform 0.3s ease;
+}
+
+.dropdown-icon.open {
+  transform: rotate(180deg);
+}
+
+.submenu {
+  background: #5a3d5c; /* Warna ungu sesuai gambar */
+  padding: 5px 15px;
+}
+
+.submenu-item {
+  display: block;
+  color: #ddd;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.submenu-item:hover {
+  color: white;
+}
